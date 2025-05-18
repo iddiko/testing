@@ -157,4 +157,103 @@ footer {
     section {
         padding: 3rem 5%;
     }
+}
+
+/* 게시판 스타일 */
+.board {
+    background-color: #fff;
+    padding: 4rem 5%;
+}
+
+.board-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.board-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.write-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.write-button:hover {
+    background-color: #0056b3;
+}
+
+.board-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.board-list th,
+.board-list td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.board-list th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.board-list tr:hover {
+    background-color: #f8f9fa;
+}
+
+.board-list td:nth-child(2) {
+    text-align: left;
+}
+
+.board-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.board-pagination button {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.board-pagination button:hover {
+    background-color: #f8f9fa;
+}
+
+.board-pagination span {
+    font-weight: 600;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .board-list th:nth-child(1),
+    .board-list td:nth-child(1),
+    .board-list th:nth-child(3),
+    .board-list td:nth-child(3),
+    .board-list th:nth-child(5),
+    .board-list td:nth-child(5) {
+        display: none;
+    }
+
+    .board-list th,
+    .board-list td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
 } 

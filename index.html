@@ -14,6 +14,7 @@
                 <li><a href="#home">홈</a></li>
                 <li><a href="#about">회사소개</a></li>
                 <li><a href="#services">서비스</a></li>
+                <li><a href="#board">게시판</a></li>
                 <li><a href="#contact">연락처</a></li>
             </ul>
         </nav>
@@ -48,6 +49,36 @@
                 <div class="service-card">
                     <h3>기술 지원</h3>
                     <p>24/7 기술 지원 및 유지보수 서비스</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="board" class="board">
+            <h2>공지사항</h2>
+            <div class="board-container">
+                <div class="board-header">
+                    <button id="writeButton" class="write-button">글쓰기</button>
+                </div>
+                <div class="board-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>작성일</th>
+                                <th>조회</th>
+                            </tr>
+                        </thead>
+                        <tbody id="boardList">
+                            <!-- 게시글이 여기에 동적으로 추가됩니다 -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="board-pagination">
+                    <button id="prevPage">이전</button>
+                    <span id="currentPage">1</span>
+                    <button id="nextPage">다음</button>
                 </div>
             </div>
         </section>
